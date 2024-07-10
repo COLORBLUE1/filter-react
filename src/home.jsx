@@ -18,7 +18,7 @@ export function Home({ texto, url }) {
 
 export function Main() {
   return (
-    <section style={{height: "100vh"}}>
+    <section style={{ height: "100vh" }}>
       <div className="canvas">
         <Spline scene="https://prod.spline.design/uaxQoZEoAJwiDmkQ/scene.splinecode" />
       </div>
@@ -57,9 +57,22 @@ export function Footer() {
     <footer>
       <div className="items-footer">
         <div>
-          <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt blanditiis expedita repudiandae error vel esse perferendis asperiores accusamus. Similique perspiciatis labore cumque nemo, maiores commodi eveniet quo facilis. Accusantium?</strong>
+          <strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            sunt blanditiis expedita repudiandae error vel esse perferendis
+            asperiores accusamus. Similique perspiciatis labore cumque nemo,
+            maiores commodi eveniet quo facilis. Accusantium?
+          </strong>
         </div>
-        <div>   <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt blanditiis expedita repudiandae error vel esse perferendis asperiores accusamus. Similique perspiciatis labore cumque nemo, maiores commodi eveniet quo facilis. Accusantium?</strong></div>
+        <div>
+          {" "}
+          <strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            sunt blanditiis expedita repudiandae error vel esse perferendis
+            asperiores accusamus. Similique perspiciatis labore cumque nemo,
+            maiores commodi eveniet quo facilis. Accusantium?
+          </strong>
+        </div>
       </div>
     </footer>
   );
