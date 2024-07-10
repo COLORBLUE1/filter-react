@@ -1,0 +1,284 @@
+$text-titulo: "bebas";
+$text-contenido: "montserrat";
+
+body {
+  // background: url("https://cdn.pixabay.com/photo/2023/04/14/20/52/lake-7925872_1280.jpg")
+  //   no-repeat center;
+  // background-size: cover;
+
+  background: linear-gradient(red, black);
+}
+
+//Login estilos
+
+.login-container {
+  max-width: 400px;
+  margin: 15% auto;
+  padding: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h1 {
+    font-family: $text-titulo;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #49494994;
+    letter-spacing: 8px;
+  }
+
+  form {
+    .form-group {
+      margin-bottom: 15px;
+
+      label[id="label-username"],
+      label[id="label-password"] {
+        color: #fff;
+        font-family: $text-contenido;
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        font-weight: bold;
+      }
+
+      label {
+        color: #ffffff81;
+        display: flex;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 15px;
+        font-weight: bold;
+
+        h4 {
+          color: #ffffffce;
+          margin: 0;
+          font-family: $text-contenido;
+        }
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-family: $text-contenido;
+        background: rgba(255, 255, 255, 0);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+      }
+
+      input::placeholder {
+        color: #c9c9c9;
+        padding-left: 10px;
+        border: none;
+      }
+    }
+
+    button {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #00a33f;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      width: 70%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #00c74c;
+      }
+    }
+
+    .input-div {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        position: absolute;
+        right: 50px;
+        color: #fff;
+      }
+    }
+  }
+
+  .nocloud {
+    font-family: $text-contenido;
+    font-weight: 400;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #d3d3d3;
+    }
+  }
+
+  .password-olvide {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px;
+    top: 5px;
+    font-size: 12px;
+    left: 100px;
+    font-family: $text-contenido;
+  }
+
+  .password-olvide:hover {
+    color: #c9c9c9;
+  }
+}
+
+//registros
+
+.register-container {
+  max-width: 400px;
+  margin: 15% auto;
+  padding: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h1 {
+    font-family: $text-titulo;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #49494994;
+    letter-spacing: 8px;
+  }
+
+  form {
+    .form-group {
+      margin-bottom: 15px;
+
+      label[id="label-username"],
+      label[id="label-password"] {
+        color: #fff;
+        font-family: $text-contenido;
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        font-weight: bold;
+      }
+
+      label {
+        color: #ffffff81;
+        display: flex;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 15px;
+        font-weight: bold;
+
+        h4 {
+          color: #ffffffce;
+          margin: 0;
+          font-family: $text-contenido;
+        }
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-family: $text-contenido;
+        background: rgba(255, 255, 255, 0);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+      }
+
+      input::placeholder {
+        color: #c9c9c9;
+        padding-left: 10px;
+      }
+    }
+
+    button {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #00a33f;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      width: 70%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #00c74c;
+      }
+    }
+
+    .input-div {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        position: absolute;
+        right: 50px;
+        color: #fff;
+      }
+    }
+  }
+
+  .nocloud {
+    font-family: $text-contenido;
+    font-weight: 400;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #d3d3d3;
+    }
+  }
+
+  .password-olvide {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px;
+    top: 5px;
+    font-size: 12px;
+    left: 100px;
+    font-family: $text-contenido;
+  }
+
+  .password-olvide:hover {
+    color: #c9c9c9;
+  }
+}
