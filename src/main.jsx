@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import { Home, Main, Footer, Iconfooter } from "./home.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  
   <>
     <div
       style={{
@@ -21,7 +22,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div>
       <Main />
     </div>
-    {/* <Login /> */}
 
     <div
       style={{
