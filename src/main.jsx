@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import {Login} from './login.jsx'
-import { Home } from "./home.jsx";
-import { Main } from "./home.jsx";
-import { Footer } from "./home.jsx";
+import { Home, Main, Footer, Iconfooter } from "./home.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
@@ -13,20 +11,41 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         justifyContent: "center",
         position: "fixed",
         zIndex: "999",
-        width: "100%"
+        width: "100%",
       }}
     >
-      <Home texto="Telefonos" url="#" />
+      <Home texto="Telefonos" />
       <Home texto="Computadores" url="#" />
     </div>
 
-    <div style={{}}>
-    <Main   
-      
-      />
+    <div>
+      <Main />
     </div>
     {/* <Login /> */}
 
-    <Footer/>
+    <div
+      style={{
+        display: "grid",
+        padding: "50px 150px",
+        justifyContent: "center",
+      }}
+    >
+      <div style={{ display: "flex", justifyContent: "center"}}>
+        <Iconfooter
+          
+          urlimg="https://upload.wikimedia.org/wikipedia/commons/6/6d/Ionicons_logo-codepen.svg"
+          altimg="codepen"
+        />
+        <Iconfooter
+          urlimg="https://upload.wikimedia.org/wikipedia/commons/0/06/Linkedin_circle_black-512.png"
+          altimg="Linkedin"
+        />
+        <Iconfooter
+          urlimg="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
+          altimg="GitHub"
+        />
+      </div>
+      <Footer />
+    </div>
   </>
 );

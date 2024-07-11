@@ -2,17 +2,15 @@ import "./assets/style/CSS/home.css";
 import "./assets/style/CSS/Fonts.css";
 import Spline from "@splinetool/react-spline";
 
-export function Home({ texto, url }) {
+export function Home({ texto = "no-text" }) {
   return (
-    <div>
-      <header className="tipos-section">
-        <nav>
-          <ul>
-            <li href={url}>{texto}</li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <header className="tipos-section">
+      <nav>
+        <ul>
+          <li>{texto}</li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
@@ -52,25 +50,41 @@ export function Main() {
   );
 }
 
+export function Iconfooter({ urlimg, altimg }) {
+  return (
+    <div>
+      <figure>
+        <img
+          style={{
+            width: "55px",
+            height: "55px",
+            cursor: "pointer",
+            opacity: "0.6",
+            transition: "opacity 0.3s, transform 0.3s",
+          }}
+          src={urlimg}
+          alt={altimg}
+          onMouseOver={(e) => {
+            e.currentTarget.style.opacity = "1";
+            e.currentTarget.style.transform = "scale(1.2)";
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.opacity = "0.6";
+            e.currentTarget.style.transform = "scale(1)";
+          }}
+        />
+      </figure>
+    </div>
+  );
+}
+
 export function Footer() {
   return (
     <footer>
       <div className="items-footer">
-        <div>
+        <div className="copyright">
           <strong>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            sunt blanditiis expedita repudiandae error vel esse perferendis
-            asperiores accusamus. Similique perspiciatis labore cumque nemo,
-            maiores commodi eveniet quo facilis. Accusantium?
-          </strong>
-        </div>
-        <div>
-          {" "}
-          <strong>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            sunt blanditiis expedita repudiandae error vel esse perferendis
-            asperiores accusamus. Similique perspiciatis labore cumque nemo,
-            maiores commodi eveniet quo facilis. Accusantium?
+            Creado por <a href="">Camilo sol</a>
           </strong>
         </div>
       </div>

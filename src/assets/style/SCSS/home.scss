@@ -17,11 +17,14 @@ header {
   display: flex;
   text-align: center;
   border-radius: 30px;
-  margin: 10px;
   padding: 10px;
   cursor: pointer;
   justify-content: flex-start;
   align-items: center;
+
+  ul {
+    padding: 0;
+  }
 
   li {
     background-color: #95a5ff;
@@ -34,13 +37,19 @@ header {
     margin: auto;
     list-style: none;
   }
+
+  li:hover {
+    transition: all 0.2s linear;
+    transform: scale(1.1);
+  }
 }
 
 //section principal
 .canvas {
   position: relative;
-  top: -80px;
-  height: 800px;
+  top: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 .print {
@@ -82,6 +91,29 @@ header {
 
     Spline {
       width: 50%;
+    }
+  }
+}
+
+footer {
+  .items-footer {
+    display: grid;
+    padding: 50px 150px;
+    justify-items: center;
+  }
+  
+  .copyright {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color: #95a5ff;
+      font-family: sans-serif;
+    }
+    a:hover {
+      transition: color 0.5s linear;
+      color: #3554ff;
     }
   }
 }
