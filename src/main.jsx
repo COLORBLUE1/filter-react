@@ -1,23 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import {Login} from './login.jsx'
-import { Home, Main, Footer, Iconfooter } from "./home.jsx";
+import { Main, Footer, Iconfooter } from "./home.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   
   <>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        position: "fixed",
-        zIndex: "999",
-        width: "100%",
-      }}
-    >
-      <Home texto="Telefonos" />
-      <Home texto="Computadores" url="#" />
-    </div>
 
     <div>
       <Main />
@@ -26,8 +14,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div
       style={{
         display: "grid",
-        padding: "50px 150px",
+        padding: "150px 150px",
         justifyContent: "center",
+        paddingBottom: "0"
       }}
     >
       <div style={{ display: "flex", justifyContent: "center"}}>

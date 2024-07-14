@@ -2,23 +2,13 @@ import "./assets/style/CSS/home.css";
 import "./assets/style/CSS/Fonts.css";
 import Spline from "@splinetool/react-spline";
 
-export function Home({ texto = "no-text" }) {
-  return (
-    <header className="tipos-section">
-      <nav>
-        <ul>
-          <li>{texto}</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
+
 
 export function Main() {
   return (
     <section style={{ height: "100vh" }}>
       <div className="canvas">
-        <Spline scene="https://prod.spline.design/uaxQoZEoAJwiDmkQ/scene.splinecode" />
+        <Spline style={{ height: "100vh" }} scene="https://prod.spline.design/uaxQoZEoAJwiDmkQ/scene.splinecode" />
       </div>
 
       <section className="print">
@@ -38,10 +28,10 @@ export function Main() {
             almacenamiento y más.
           </p>
           {/* <img src="https://portafolio-v2-three.vercel.app/assets/Recursos-img/Perfil-photos/Perfil_2.png" alt="" /> */}
-          {/* <div className="cell-pc">
-            <Spline scene="https://prod.spline.design/Wy0tjeteK8XwiKut/scene.splinecode" />
-            <Spline scene="https://prod.spline.design/meVuuKWxU-Jefd4X/scene.splinecode" />
-          </div>  */}
+          <div className="cell-pc">
+          <div className="option"><Spline scene="https://prod.spline.design/Wy0tjeteK8XwiKut/scene.splinecode" /></div>
+          <div className="option"><Spline scene="https://prod.spline.design/meVuuKWxU-Jefd4X/scene.splinecode" /></div>
+          </div> 
         </div>
 
         <div className="contenido"></div>

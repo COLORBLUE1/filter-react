@@ -3,7 +3,8 @@ body {
     0deg,
     rgba(0, 255, 248, 1) 0%,
     rgba(255, 223, 155, 1) 100%
-  );
+  ) no-repeat ;
+  background-size: cover;
   min-height: 100vh;
 }
 
@@ -12,15 +13,10 @@ body {
 header {
   z-index: 999;
   position: relative;
-  max-width: 300px;
-  top: 100px;
-  display: flex;
   text-align: center;
   border-radius: 30px;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
-  justify-content: flex-start;
-  align-items: center;
 
   ul {
     padding: 0;
@@ -82,27 +78,40 @@ header {
   p {
     font-size: 20px;
     color: #585858;
+    
     span {
       color: rgb(184, 166, 252);
     }
   }
   .cell-pc {
     display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    
 
-    Spline {
-      width: 50%;
+    .option{
+      width: 200px;
+      height: 250px;
+     transition: all 0.5s ease; 
     }
+
+    .option:hover{
+      
+     scale: 1.2;
+    }
+
   }
 }
 
 footer {
   .items-footer {
     display: grid;
-    padding: 50px 150px;
+    padding: 50px 60px;
     justify-items: center;
   }
-  
+
   .copyright {
+    z-index: 2;
     margin: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
