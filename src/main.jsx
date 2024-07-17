@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import {Login} from './login.jsx'
 import { Main, Footer, Iconfooter } from "./home.jsx";
+import { Login } from "./login.jsx";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   
   <>
-
-    <div>
+ <Login />
+    {/* <div>
       <Main />
     </div>
 
@@ -35,6 +37,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
       </div>
       <Footer />
-    </div>
+    </div> */}
   </>
 );

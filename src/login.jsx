@@ -1,6 +1,5 @@
 import "./assets/style/CSS/login.css";
 import "./assets/style/CSS/Fonts.css";
-import  {home} from "./home";
 import { FaRegUserCircle } from "react-icons/fa";
 import { GiPadlockOpen } from "react-icons/gi";
 
@@ -52,7 +51,7 @@ export function Login() {
 
       {/* Registro */}
 
-      <section style={{display:"none"}} className="register-container">
+      <section style={{display:""}} className="register-container">
         <h1>Registrarse</h1>
         <form>
           <div className="form-group">
